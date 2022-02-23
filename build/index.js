@@ -23,6 +23,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+/**
+ * Change: block-boilerplate
+ */
+
 function Edit() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Block Boilerplate – hello from the editor!", "block-boilerplate"));
 }
@@ -44,6 +48,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+/**
+ * Change: block-boilerplate
+ */
 
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("create-block/block-boilerplate", {
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
@@ -70,6 +78,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
 
 
+
+/**
+ * @change Block-boilerplate
+ */
 
 function save() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Block Boilerplate – hello from the saved content!", "block-boilerplate"));

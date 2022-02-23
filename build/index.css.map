@@ -1,1 +1,1 @@
-{"version":3,"file":"index.css","mappings":";;;AAAA;EACC;AACD,C","sources":["webpack://block-boilerplate/./src/editor.scss"],"sourcesContent":[".wp-block-create-block-block-boilerplate {\n\tborder: 1px dotted #f00;\n}\n"],"names":[],"sourceRoot":""}
+{"version":3,"file":"index.css","mappings":";;;AACA;EACC;AAAD,C","sources":["webpack://block-boilerplate/./src/editor.scss"],"sourcesContent":["// Change:\tblock-boilerplate\n.wp-block-create-block-block-boilerplate {\n\tborder: 1px dotted #f00;\n}\n"],"names":[],"sourceRoot":""}

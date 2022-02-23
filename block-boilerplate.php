@@ -1,6 +1,7 @@
 <?php
 
 /**
+ * Change:			  Plugin Name, Function Name
  * Plugin Name:       Block Boilerplate
  * Description:       Example block written with ESNext standard and JSX support – build step required.
  * Requires at least: 5.8
