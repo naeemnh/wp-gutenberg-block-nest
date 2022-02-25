@@ -5,7 +5,7 @@ import { useBlockProps } from "@wordpress/block-editor";
  * @change Block-boilerplate
  */
 
-export default function save() {
+const save = () => {
 	return (
 		<p {...useBlockProps.save()}>
 			{__(
@@ -14,4 +14,6 @@ export default function save() {
 			)}
 		</p>
 	);
-}
+};
+
+export default save;

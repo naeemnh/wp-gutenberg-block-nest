@@ -5,10 +5,12 @@ import "./editor.scss";
 /**
  * Change: block-boilerplate
  */
-export default function Edit() {
+const Edit = () => {
 	return (
 		<p {...useBlockProps()}>
 			{__("Block Boilerplate – hello from the editor!", "block-boilerplate")}
 		</p>
 	);
-}
+};
+
+export default Edit;
