@@ -2,16 +2,16 @@
 	"change": ["name", "title", "textdomain"],
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "create-block/block-boilerplate",
+	"name": "block-template/block-nest",
 	"version": "0.1.0",
-	"title": "Block Boilerplate",
-	"category": "widgets",
+	"title": "Block Nest",
+	"category": "theme",
 	"icon": "smiley",
 	"description": "Example block written with ESNext standard and JSX support – build step required.",
 	"supports": {
 		"html": false
 	},
-	"textdomain": "block-boilerplate",
+	"textdomain": "block-nest",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css"
