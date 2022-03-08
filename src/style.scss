@@ -1,7 +1,8 @@
 .wp-block-block-template-block-nest {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -10px;
+	margin-right: -10px;
 
 	@for $i from 1 through 6 {
 		&.has-col-#{$i} {
@@ -13,6 +14,10 @@
 
 	.wp-block-block-template-single-block {
 		margin: 10px;
+
+		img {
+			margin-bottom: 20px;
+		}
 
 		h4 {
 			color: #222;

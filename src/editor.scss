@@ -33,6 +33,28 @@
 			> [data-type="block-template/single-block"] {
 				margin: 10px;
 
+				.block-editor-media-placeholder {
+					margin-bottom: 20px;
+				}
+
+				.wp-block-block-template-single-block-img {
+					position: relative;
+					margin-bottom: 20px;
+
+					&.is-loading img {
+						opacity: 0.3;
+					}
+
+					.components-spinner {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+
 				h4 {
 					color: #222;
 					font-size: 22px;

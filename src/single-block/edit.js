@@ -1,19 +1,23 @@
+import { useEffect, useState } from "@wordpress/element";
 import {
 	useBlockProps,
 	RichText,
 	MediaPlaceholder,
 } from "@wordpress/block-editor";
 import { __ } from "@wordpress/i18n";
-import { Spinner } from "@wordpress/components";
-import { isBlobURL, withNotices } from "@wordpress/blob";
+import { Spinner, withNotices } from "@wordpress/components";
+import { isBlobURL, revokeBlobURL } from "@wordpress/blob";
 
-export default function Edit({
-	attributes,
-	setAttributes,
-	noticeOperations,
-	noticeUI,
-}) {
-	const { name, bio, url, alt } = attributes;
+const Edit = ({ attributes, setAttributes, noticeOperations, noticeUI }) => {
+	// =====================================================================
+	// Props and States
+	// =====================================================================
+	const { name, bio, url, alt, id } = attributes;
+	const [blobURL, setBlobURL] = useState();
+
+	// =====================================================================
+	// Prop and State functions
+	// =====================================================================
 	const onChangeTitle = (title) => {
 		setAttributes({ title });
 	};
@@ -38,6 +42,28 @@ export default function Edit({
 		noticeOperations.removeAllNotices();
 		noticeOperations.createErrorNotice(message);
 	};
+
+	// =====================================================================
+	// Life Cycle Methods
+	// =====================================================================
+	useEffect(() => {
+		if (!id && isBlobURL(url)) {
+			setAttributes({
+				url: undefined,
+				alt: "",
+			});
+		}
+	}, []);
+
+	useEffect(() => {
+		if (isBlobURL(url)) {
+			setBlobURL(url);
+		} else {
+			revokeBlobURL(blobURL);
+			setBlobURL();
+		}
+	}, [url]);
+
 	return (
 		<div {...useBlockProps()}>
 			{url && (
@@ -76,4 +102,6 @@ export default function Edit({
 			/>
 		</div>
 	);
-}
+};
+
+export default withNotices(Edit);

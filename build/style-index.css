@@ -2,9 +2,10 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
   \***************************************************************************************************************************************************************************************************************************************/
 .wp-block-block-template-block-nest {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 .wp-block-block-template-block-nest.has-col-1 .wp-block-block-template-single-block {
   width: calc(100% / 1 - 20px);
@@ -26,6 +27,9 @@
 }
 .wp-block-block-template-block-nest .wp-block-block-template-single-block {
   margin: 10px;
+}
+.wp-block-block-template-block-nest .wp-block-block-template-single-block img {
+  margin-bottom: 20px;
 }
 .wp-block-block-template-block-nest .wp-block-block-template-single-block h4 {
   color: #222;
