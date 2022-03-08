@@ -1,4 +1,53 @@
 // Change:	block-boilerplate
 .wp-block-block-template-block-nest {
-	border: 1px dotted #f00;
+	display: block;
+
+	@for $i from 1 through 6 {
+		&.has-col-#{$i} {
+			> .block-editor-inner-blocks > .block-editor-block-list__layout > {
+				[data-type="block-template/single-block"] {
+					width: calc(100% / #{$i} - 20px);
+				}
+				.block-list-appender {
+					align-self: stretch;
+					width: calc(100% / #{$i} - 20px);
+					border: 1px dashed;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					min-height: 70px;
+				}
+			}
+		}
+		> .block-editor-inner-blocks > .block-editor-block-list__layout {
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: -10px;
+			margin-right: -10px;
+
+			[data-type="block-template/single-block"] {
+				max-width: none;
+				margin: 0;
+			}
+
+			> [data-type="block-template/single-block"] {
+				margin: 10px;
+
+				h4 {
+					color: #222;
+					font-size: 22px;
+					font-size: bold;
+					margin: 0;
+				}
+
+				p {
+					color: #565656;
+					font-size: 16px;
+					font-weight: 300;
+					margin-bottom: 5px;
+					margin-top: 5px;
+				}
+			}
+		}
+	}
 }

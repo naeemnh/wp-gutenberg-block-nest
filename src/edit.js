@@ -1,16 +1,40 @@
 import { __ } from "@wordpress/i18n";
-import { useBlockProps, InnerBlocks } from "@wordpress/block-editor";
-
+import {
+	useBlockProps,
+	InnerBlocks,
+	InspectorControls,
+} from "@wordpress/block-editor";
+import { PanelBody, RangeControl } from "@wordpress/components";
 import "./editor.scss";
-const Edit = () => {
+const Edit = ({ attributes, setAttributes }) => {
+	const { columns } = attributes;
+	const onChangeColumns = (columns) => {
+		setAttributes({ columns });
+	};
 	return (
-		<div {...useBlockProps()}>
+		<div
+			{...useBlockProps({
+				className: `has-col-${columns}`,
+			})}
+		>
+			<InspectorControls>
+				<PanelBody>
+					<RangeControl
+						label={__("Columns", "block-nest")}
+						min={1}
+						max={6}
+						onChange={onChangeColumns}
+						value={columns}
+					/>
+				</PanelBody>
+			</InspectorControls>
 			<InnerBlocks
 				allowedBlocks={["block-template/single-block"]}
+				orientation="horizontal"
 				template={[
-					["block-tempalte/single-block"],
-					["block-tempalte/single-block"],
-					["block-tempalte/single-block"],
+					["block-template/single-block"],
+					["block-template/single-block"],
+					["block-template/single-block"],
 				]}
 			/>
 		</div>
