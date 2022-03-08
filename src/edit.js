@@ -5,7 +5,14 @@ import "./editor.scss";
 const Edit = () => {
 	return (
 		<div {...useBlockProps()}>
-			<InnerBlocks allowedBlocks={["block-template/single-block"]} />
+			<InnerBlocks
+				allowedBlocks={["block-template/single-block"]}
+				template={[
+					["block-tempalte/single-block"],
+					["block-tempalte/single-block"],
+					["block-tempalte/single-block"],
+				]}
+			/>
 		</div>
 	);
 };
