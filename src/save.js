@@ -1,18 +1,17 @@
 import { __ } from "@wordpress/i18n";
 
-import { useBlockProps } from "@wordpress/block-editor";
-/**
- * @change Block-boilerplate
- */
+import { useBlockProps, InnerBlocks } from "@wordpress/block-editor";
 
-const save = () => {
+const save = ({ attributes }) => {
+	const { columns } = attributes;
 	return (
-		<p {...useBlockProps.save()}>
-			{__(
-				"Block Boilerplate – hello from the saved content!",
-				"block-boilerplate"
-			)}
-		</p>
+		<div
+			{...useBlockProps.save({
+				className: `has-col-${columns}`,
+			})}
+		>
+			<InnerBlocks.Content />
+		</div>
 	);
 };
 

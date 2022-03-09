@@ -1,5 +1,5 @@
 {
-	"name": "block-boilerplate",
+	"name": "block-nest",
 	"version": "0.1.0",
 	"description": "Example block written with ESNext standard and JSX support – build step required.",
 	"author": "The WordPress Contributors",
@@ -18,6 +18,17 @@
 		"@wordpress/scripts": "^22.0.0"
 	},
 	"dependencies": {
-		"@wordpress/components": "^19.5.0"
+		"@dnd-kit/core": "^5.0.1",
+		"@dnd-kit/modifiers": "^5.0.0",
+		"@dnd-kit/sortable": "^6.0.0",
+		"@dnd-kit/utilities": "^3.1.0",
+		"@wordpress/blob": "^3.3.1",
+		"@wordpress/block-editor": "^8.2.0",
+		"@wordpress/blocks": "^11.2.2",
+		"@wordpress/components": "^19.5.0",
+		"@wordpress/compose": "^5.1.2",
+		"@wordpress/data": "^6.3.0",
+		"@wordpress/element": "^4.1.1",
+		"@wordpress/i18n": "^4.3.1"
 	}
 }

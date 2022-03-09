@@ -2,17 +2,49 @@
 	"change": ["name", "title", "textdomain"],
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "create-block/block-boilerplate",
+	"name": "block-template/block-nest",
 	"version": "0.1.0",
-	"title": "Block Boilerplate",
-	"category": "widgets",
-	"icon": "smiley",
+	"title": "Block Nest",
+	"category": "theme",
+	"icon": "groups",
 	"description": "Example block written with ESNext standard and JSX support – build step required.",
 	"supports": {
-		"html": false
+		"html": false,
+		"align": ["wide"]
 	},
-	"textdomain": "block-boilerplate",
+	"textdomain": "block-nest",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
-	"style": "file:./style-index.css"
+	"style": "file:./style-index.css",
+	"attributes": {
+		"columns": {
+			"type": "number",
+			"default": 2
+		}
+	},
+	"example": {
+		"attributes": {
+			"columns": 2
+		},
+		"innerBlocks": [
+			{
+				"name": "block-template/single-block",
+				"attributes": {
+					"name": "John Doe",
+					"bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque nibh, tincidunt ut facilisis vitae, ullamcorper sit amet lectus. Proin porta vulputate purus.",
+					"url": "https://picsum.photos/id/1012/300/200",
+					"socialLinks": [{"icon": "facebook"}, {"icon": "twitter"}, {"icon":"instagram"}]
+				}
+			},
+			{
+				"name": "block-template/single-block",
+				"attributes": {
+					"name": "Jane Doe",
+					"bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque nibh, tincidunt ut facilisis vitae, ullamcorper sit amet lectus. Proin porta vulputate purus.",
+					"url": "https://picsum.photos/id/1011/300/200",
+					"socialLinks": [{"icon": "facebook"}, {"icon": "twitter"}, {"icon":"instagram"}]
+				}
+			}
+		]
+	}
 }
