@@ -3,9 +3,11 @@ import {
 	useBlockProps,
 	RichText,
 	MediaPlaceholder,
+	BlockControls,
+	MediaReplaceFlow,
 } from "@wordpress/block-editor";
 import { __ } from "@wordpress/i18n";
-import { Spinner, withNotices } from "@wordpress/components";
+import { Spinner, withNotices, ToolbarButton } from "@wordpress/components";
 import { isBlobURL, revokeBlobURL } from "@wordpress/blob";
 
 const Edit = ({ attributes, setAttributes, noticeOperations, noticeUI }) => {
@@ -42,6 +44,13 @@ const Edit = ({ attributes, setAttributes, noticeOperations, noticeUI }) => {
 		noticeOperations.removeAllNotices();
 		noticeOperations.createErrorNotice(message);
 	};
+	const removeImage = () => {
+		setAttributes({
+			url: undefined,
+			alt: "",
+			id: undefined,
+		});
+	};
 
 	// =====================================================================
 	// Life Cycle Methods
@@ -65,42 +74,61 @@ const Edit = ({ attributes, setAttributes, noticeOperations, noticeUI }) => {
 	}, [url]);
 
 	return (
-		<div {...useBlockProps()}>
+		<>
 			{url && (
-				<div
-					className={`wp-block-block-template-single-block-img${
-						isBlobURL(url) ? " is-loading" : ""
-					}`}
-				>
-					<img src={url} alt={alt} />
-					{isBlobURL(url) && <Spinner />}
-				</div>
+				<BlockControls group="inline">
+					<MediaReplaceFlow
+						name={__("Replace Image", "team-members")}
+						onSelect={onSelectImage}
+						onSelectURL={onSelectURL}
+						onError={onUploadError}
+						accept="image/*"
+						allowedTypes={["image"]}
+						mediaId={id}
+						mediaURL={url}
+					/>
+					<ToolbarButton onClick={removeImage}>
+						{__("Remove Image", "single-block")}
+					</ToolbarButton>
+				</BlockControls>
 			)}
-			<MediaPlaceholder
-				icon="admin-users"
-				onSelect={onSelectImage}
-				onSelectURL={onSelectURL}
-				onError={onUploadError}
-				accept="image/*"
-				allowedTypes={["image"]}
-				disableMediaButtons={url}
-				notices={noticeUI}
-			/>
-			<RichText
-				placeholder={__("Title", "single-block")}
-				tagName="h4"
-				onChange={onChangeTitle}
-				value={name}
-				allowedFormats={[]}
-			/>
-			<RichText
-				placeholder={__("Description", "single-block")}
-				tagName="p"
-				onChange={onChangeDesc}
-				value={bio}
-				allowedFormats={[]}
-			/>
-		</div>
+			<div {...useBlockProps()}>
+				{url && (
+					<div
+						className={`wp-block-block-template-single-block-img${
+							isBlobURL(url) ? " is-loading" : ""
+						}`}
+					>
+						<img src={url} alt={alt} />
+						{isBlobURL(url) && <Spinner />}
+					</div>
+				)}
+				<MediaPlaceholder
+					icon="admin-users"
+					onSelect={onSelectImage}
+					onSelectURL={onSelectURL}
+					onError={onUploadError}
+					accept="image/*"
+					allowedTypes={["image"]}
+					disableMediaButtons={url}
+					notices={noticeUI}
+				/>
+				<RichText
+					placeholder={__("Title", "single-block")}
+					tagName="h4"
+					onChange={onChangeTitle}
+					value={name}
+					allowedFormats={[]}
+				/>
+				<RichText
+					placeholder={__("Description", "single-block")}
+					tagName="p"
+					onChange={onChangeDesc}
+					value={bio}
+					allowedFormats={[]}
+				/>
+			</div>
+		</>
 	);
 };
 
