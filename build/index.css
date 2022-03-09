@@ -61,6 +61,37 @@
   margin-bottom: 5px;
   margin-top: 5px;
 }
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px -5px 0;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li {
+  display: inline-block;
+  margin: 5px;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li span.dashicon {
+  color: #4e4e4e;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li.is-selected {
+  outline: 2px solid #d028e3;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li.wp-block-block-template-single-block-add-icon-li button {
+  outline: 1px dashed;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-link-form {
+  background: #fff;
+  border: 1px solid;
+  padding: 10px;
+  margin-top: 10px;
+}
 .wp-block-block-template-block-nest.has-col-2 > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] {
   width: calc(100% / 2 - 20px);
 }
@@ -117,6 +148,37 @@
   font-weight: 300;
   margin-bottom: 5px;
   margin-top: 5px;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px -5px 0;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li {
+  display: inline-block;
+  margin: 5px;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li span.dashicon {
+  color: #4e4e4e;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li.is-selected {
+  outline: 2px solid #d028e3;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li.wp-block-block-template-single-block-add-icon-li button {
+  outline: 1px dashed;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-link-form {
+  background: #fff;
+  border: 1px solid;
+  padding: 10px;
+  margin-top: 10px;
 }
 .wp-block-block-template-block-nest.has-col-3 > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] {
   width: calc(100% / 3 - 20px);
@@ -175,6 +237,37 @@
   margin-bottom: 5px;
   margin-top: 5px;
 }
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px -5px 0;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li {
+  display: inline-block;
+  margin: 5px;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li span.dashicon {
+  color: #4e4e4e;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li.is-selected {
+  outline: 2px solid #d028e3;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li.wp-block-block-template-single-block-add-icon-li button {
+  outline: 1px dashed;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-link-form {
+  background: #fff;
+  border: 1px solid;
+  padding: 10px;
+  margin-top: 10px;
+}
 .wp-block-block-template-block-nest.has-col-4 > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] {
   width: calc(100% / 4 - 20px);
 }
@@ -231,6 +324,37 @@
   font-weight: 300;
   margin-bottom: 5px;
   margin-top: 5px;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px -5px 0;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li {
+  display: inline-block;
+  margin: 5px;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li span.dashicon {
+  color: #4e4e4e;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li.is-selected {
+  outline: 2px solid #d028e3;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li.wp-block-block-template-single-block-add-icon-li button {
+  outline: 1px dashed;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-link-form {
+  background: #fff;
+  border: 1px solid;
+  padding: 10px;
+  margin-top: 10px;
 }
 .wp-block-block-template-block-nest.has-col-5 > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] {
   width: calc(100% / 5 - 20px);
@@ -289,6 +413,37 @@
   margin-bottom: 5px;
   margin-top: 5px;
 }
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px -5px 0;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li {
+  display: inline-block;
+  margin: 5px;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li span.dashicon {
+  color: #4e4e4e;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li.is-selected {
+  outline: 2px solid #d028e3;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li.wp-block-block-template-single-block-add-icon-li button {
+  outline: 1px dashed;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-link-form {
+  background: #fff;
+  border: 1px solid;
+  padding: 10px;
+  margin-top: 10px;
+}
 .wp-block-block-template-block-nest.has-col-6 > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] {
   width: calc(100% / 6 - 20px);
 }
@@ -345,6 +500,37 @@
   font-weight: 300;
   margin-bottom: 5px;
   margin-top: 5px;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px -5px 0;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li {
+  display: inline-block;
+  margin: 5px;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li span.dashicon {
+  color: #4e4e4e;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li.is-selected {
+  outline: 2px solid #d028e3;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-social-links ul li.wp-block-block-template-single-block-add-icon-li button {
+  outline: 1px dashed;
+}
+.wp-block-block-template-block-nest > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="block-template/single-block"] .wp-block-block-template-single-block-link-form {
+  background: #fff;
+  border: 1px solid;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=index.css.map*/

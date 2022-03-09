@@ -39,6 +39,26 @@ registerBlockType("block-template/single-block", {
 			selector: "img",
 			attribute: "src",
 		},
+		socialLinks: {
+			type: "array",
+			default: [
+				{ link: "https:/facebook.com", icon: "facebook" },
+				{ link: "https:/instagram.com", icon: "instagram" },
+			],
+			source: "query",
+			selector: ".wp-block-block-template-single-block-social-links ul li",
+			query: {
+				icon: {
+					source: "attribute",
+					attribute: "data-icon",
+				},
+				link: {
+					source: "attribute",
+					selector: "a",
+					attribute: "href",
+				},
+			},
+		},
 	},
 	edit: Edit,
 	save: Save,
