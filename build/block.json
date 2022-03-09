@@ -9,7 +9,8 @@
 	"icon": "groups",
 	"description": "Example block written with ESNext standard and JSX support – build step required.",
 	"supports": {
-		"html": false
+		"html": false,
+		"align": ["wide"]
 	},
 	"textdomain": "block-nest",
 	"editorScript": "file:./index.js",

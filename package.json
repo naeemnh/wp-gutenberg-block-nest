@@ -18,6 +18,8 @@
 		"@wordpress/scripts": "^22.0.0"
 	},
 	"dependencies": {
-		"@wordpress/components": "^19.5.0"
+		"@wordpress/components": "^19.5.0",
+		"@wordpress/compose": "^5.1.2",
+		"@wordpress/data": "^6.3.0"
 	}
 }
